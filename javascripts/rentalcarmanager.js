@@ -113,3 +113,8 @@ jQuery(function () {
        }); //txtEndDate
 
   });   //jQuery function
+  
+  
+  $(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
