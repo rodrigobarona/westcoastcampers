@@ -1,0 +1,390 @@
+
+body{min-width:1200px;}nav#main_menu {clear: right;}		body header#header #logo a ,header#header.style2 #logo a , header#header.style3 #logo a{
+		min-height: 95px;
+			padding: 0 25px;
+			line-height: 95px;
+			text-align: center;
+			height:95px;
+			}
+		#logo a img { max-height:90px;padding:10px; }
+		#logo a img{
+	max-width:none;
+	width:auto;	height:100%;	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+
+/*----------------------  Header --------------------------*/
+
+
+#page_header.zn_def_header_style , #slideshow.zn_def_header_style , #page_header.uh_zn_def_header_style , #slideshow.uh_zn_def_header_style{
+background-color:#AAAAAA;}
+
+#page_header.zn_def_header_style #sparkles, #slideshow.zn_def_header_style #sparkles , #page_header.uh_zn_def_header_style #sparkles, #slideshow.uh_zn_def_header_style #sparkles {
+}
+
+#page_header.zn_def_header_style .bgback , #slideshow.zn_def_header_style .bgback , #page_header.uh_zn_def_header_style .bgback , #slideshow.uh_zn_def_header_style .bgback{
+background-image:url("http://f-one.pt/wp/wp-content/uploads/2013/12/campervan_hire_portugal3.jpg");}
+
+#page_header.zn_def_header_style , #slideshow.zn_def_header_style {}
+
+
+/*----------------------  Unlimited Headers --------------------------*/
+
+#page_header.uh_blue_style_with_gradient .bgback , #slideshow.uh_blue_style_with_gradient .bgback {background-image:url("http://f-one.pt/wp/wp-content/uploads/2013/12/campervan_hire_portugal6.jpg");}#page_header.uh_blue_style_with_gradient #sparkles , #slideshow.uh_blue_style_with_gradient #sparkles{display:none}#page_header.uh_blue_style_with_gradient , #slideshow.uh_blue_style_with_gradient {background-color:#345370;}#page_header.uh_static_content .bgback , #slideshow.uh_static_content .bgback {background-image:url("http://f-one.pt/wp/wp-content/uploads/2014/01/campervan_rental_portugal.jpg");}#page_header.uh_static_content #sparkles , #slideshow.uh_static_content #sparkles {display:block}#page_header.uh_static_content , #slideshow.uh_static_content {background-color:#0a0707;}#page_header.uh_map_mask .bgback , #slideshow.uh_map_mask .bgback {}#page_header.uh_map_mask #sparkles , #slideshow.uh_map_mask #sparkles{display:none}#page_header.uh_map_mask , #slideshow.uh_map_mask {background-color:#AAAAAA;}#page_header.uh_map_mask .zn_header_bottom_style , #slideshow.uh_map_mask .zn_header_bottom_style {position:absolute; bottom:0; left:0; width:100%; z-index:99; height:33px; background:url(http://f-one.pt/wp/wp-content/themes/kallyas/images/bottom_mask2.png) no-repeat center top;}#page_header.uh_cute_slider .bgback , #slideshow.uh_cute_slider .bgback {}#page_header.uh_cute_slider #sparkles , #slideshow.uh_cute_slider #sparkles{display:none}#page_header.uh_cute_slider , #slideshow.uh_cute_slider {background-color:#f5f5f5;background-image: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.5) 100%); /* FF3.6+ */ background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.5))); /* Chrome,Safari4+ */background-image: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%); /* Chrome10+,Safari5.1+ */background-image: -o-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%); /* Opera 11.10+ */background-image: -ms-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%); /* IE10+ */background-image: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%); /* W3C */filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#80000000',GradientType=0 ); /* IE6-9 */}#page_header.uh_extras .bgback , #slideshow.uh_extras .bgback {background-image:url("http://f-one.pt/wp/wp-content/uploads/2014/06/campervan_rental_portugal.jpg");}#page_header.uh_extras #sparkles , #slideshow.uh_extras #sparkles {display:block}#page_header.uh_extras , #slideshow.uh_extras {background-color:#AAAAAA;background-image: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.5) 100%); /* FF3.6+ */ background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.5))); /* Chrome,Safari4+ */background-image: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%); /* Chrome10+,Safari5.1+ */background-image: -o-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%); /* Opera 11.10+ */background-image: -ms-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%); /* IE10+ */background-image: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%); /* W3C */filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#80000000',GradientType=0 ); /* IE6-9 */}#page_header.uh_extras1 .bgback , #slideshow.uh_extras1 .bgback {background-image:url("http://f-one.pt/wp/wp-content/uploads/2014/06/campervan_hire_portugal1.jpg");}#page_header.uh_extras1 #sparkles , #slideshow.uh_extras1 #sparkles{display:none}#page_header.uh_extras1 , #slideshow.uh_extras1 {background-color:#AAAAAA;background-image: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.5) 100%); /* FF3.6+ */ background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.5))); /* Chrome,Safari4+ */background-image: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%); /* Chrome10+,Safari5.1+ */background-image: -o-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%); /* Opera 11.10+ */background-image: -ms-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%); /* IE10+ */background-image: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%); /* W3C */filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#80000000',GradientType=0 ); /* IE6-9 */}#page_header.uh_ericeira .bgback , #slideshow.uh_ericeira .bgback {background-image:url("http://f-one.pt/wp/wp-content/uploads/2014/06/campervan_hire_portugal2.jpg");}#page_header.uh_ericeira #sparkles , #slideshow.uh_ericeira #sparkles{display:none}#page_header.uh_ericeira , #slideshow.uh_ericeira {background-color:#AAAAAA;background-image: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.5) 100%); /* FF3.6+ */ background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.5))); /* Chrome,Safari4+ */background-image: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%); /* Chrome10+,Safari5.1+ */background-image: -o-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%); /* Opera 11.10+ */background-image: -ms-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%); /* IE10+ */background-image: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%); /* W3C */filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#80000000',GradientType=0 ); /* IE6-9 */}#page_header.uh_geres .bgback , #slideshow.uh_geres .bgback {background-image:url("http://f-one.pt/wp/wp-content/uploads/2013/12/campervan_hire_portugal18.jpg");}#page_header.uh_geres #sparkles , #slideshow.uh_geres #sparkles{display:none}#page_header.uh_geres , #slideshow.uh_geres {background-color:#AAAAAA;background-image: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.5) 100%); /* FF3.6+ */ background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.5))); /* Chrome,Safari4+ */background-image: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%); /* Chrome10+,Safari5.1+ */background-image: -o-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%); /* Opera 11.10+ */background-image: -ms-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%); /* IE10+ */background-image: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%); /* W3C */filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#80000000',GradientType=0 ); /* IE6-9 */}#page_header.uh_porto_covo .bgback , #slideshow.uh_porto_covo .bgback {background-image:url("http://f-one.pt/wp/wp-content/uploads/2014/06/campervan_hire_portugal3.jpg");}#page_header.uh_porto_covo #sparkles , #slideshow.uh_porto_covo #sparkles{display:none}#page_header.uh_porto_covo , #slideshow.uh_porto_covo {background-color:#AAAAAA;background-image: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.5) 100%); /* FF3.6+ */ background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.5))); /* Chrome,Safari4+ */background-image: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%); /* Chrome10+,Safari5.1+ */background-image: -o-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%); /* Opera 11.10+ */background-image: -ms-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%); /* IE10+ */background-image: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%); /* W3C */filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#80000000',GradientType=0 ); /* IE6-9 */}#page_header.uh_rental_info .bgback , #slideshow.uh_rental_info .bgback {background-image:url("http://f-one.pt/wp/wp-content/uploads/2014/01/campervan_hire_portugal.jpg");}#page_header.uh_rental_info #sparkles , #slideshow.uh_rental_info #sparkles{display:none}#page_header.uh_rental_info , #slideshow.uh_rental_info {background-color:#AAAAAA;}#page_header.uh_ipad .bgback , #slideshow.uh_ipad .bgback {background-image:url("http://f-one.pt/wp/wp-content/uploads/2014/01/campervan_hire_portugal4.jpg");}#page_header.uh_ipad #sparkles , #slideshow.uh_ipad #sparkles{display:none}#page_header.uh_ipad , #slideshow.uh_ipad {background-color:#AAAAAA;}#page_header.uh_malta .bgback , #slideshow.uh_malta .bgback {background-image:url("http://f-one.pt/wp/wp-content/uploads/2014/11/campervan_hire_portugal10.jpg");}#page_header.uh_malta #sparkles , #slideshow.uh_malta #sparkles{display:none}#page_header.uh_malta , #slideshow.uh_malta {background-color:#AAAAAA;background-image: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.5) 100%); /* FF3.6+ */ background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.5))); /* Chrome,Safari4+ */background-image: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%); /* Chrome10+,Safari5.1+ */background-image: -o-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%); /* Opera 11.10+ */background-image: -ms-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%); /* IE10+ */background-image: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%); /* W3C */filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#80000000',GradientType=0 ); /* IE6-9 */}#page_header.uh_3carrinhas .bgback , #slideshow.uh_3carrinhas .bgback {background-image:url("http://f-one.pt/wp/wp-content/uploads/2014/06/campervan_hire_portugal.jpg");}#page_header.uh_3carrinhas #sparkles , #slideshow.uh_3carrinhas #sparkles{display:none}#page_header.uh_3carrinhas , #slideshow.uh_3carrinhas {background-color:#AAAAAA;background-image: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.5) 100%); /* FF3.6+ */ background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.5))); /* Chrome,Safari4+ */background-image: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%); /* Chrome10+,Safari5.1+ */background-image: -o-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%); /* Opera 11.10+ */background-image: -ms-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%); /* IE10+ */background-image: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%); /* W3C */filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#80000000',GradientType=0 ); /* IE6-9 */}#page_header.uh_alentejo .bgback , #slideshow.uh_alentejo .bgback {background-image:url("http://f-one.pt/wp/wp-content/uploads/2014/05/campervan_hire_portugal.jpg");}#page_header.uh_alentejo #sparkles , #slideshow.uh_alentejo #sparkles{display:none}#page_header.uh_alentejo , #slideshow.uh_alentejo {background-color:#AAAAAA;background-image: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.5) 100%); /* FF3.6+ */ background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.5))); /* Chrome,Safari4+ */background-image: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%); /* Chrome10+,Safari5.1+ */background-image: -o-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%); /* Opera 11.10+ */background-image: -ms-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%); /* IE10+ */background-image: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%); /* W3C */filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#80000000',GradientType=0 ); /* IE6-9 */}#page_header.uh_vista .bgback , #slideshow.uh_vista .bgback {background-image:url("http://f-one.pt/wp/wp-content/uploads/2013/12/campervan_hire_portugal6.jpg");}#page_header.uh_vista #sparkles , #slideshow.uh_vista #sparkles{display:none}#page_header.uh_vista , #slideshow.uh_vista {background-color:#AAAAAA;background-image: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.5) 100%); /* FF3.6+ */ background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.5))); /* Chrome,Safari4+ */background-image: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%); /* Chrome10+,Safari5.1+ */background-image: -o-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%); /* Opera 11.10+ */background-image: -ms-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%); /* IE10+ */background-image: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%); /* W3C */filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#80000000',GradientType=0 ); /* IE6-9 */}#page_header.uh_tijolos .bgback , #slideshow.uh_tijolos .bgback {background-image:url("http://f-one.pt/wp/wp-content/uploads/2014/09/campervan_rental_portugal.jpg");}#page_header.uh_tijolos #sparkles , #slideshow.uh_tijolos #sparkles{display:none}#page_header.uh_tijolos , #slideshow.uh_tijolos {background-color:#AAAAAA;background-image: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.5) 100%); /* FF3.6+ */ background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.5))); /* Chrome,Safari4+ */background-image: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%); /* Chrome10+,Safari5.1+ */background-image: -o-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%); /* Opera 11.10+ */background-image: -ms-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%); /* IE10+ */background-image: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%); /* W3C */filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#80000000',GradientType=0 ); /* IE6-9 */}#page_header.uh_passaportes_peniche .bgback , #slideshow.uh_passaportes_peniche .bgback {background-image:url("http://f-one.pt/wp/wp-content/uploads/2014/11/campervan_hire_portugal.jpg");}#page_header.uh_passaportes_peniche #sparkles , #slideshow.uh_passaportes_peniche #sparkles{display:none}#page_header.uh_passaportes_peniche , #slideshow.uh_passaportes_peniche {background-color:#AAAAAA;background-image: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.5) 100%); /* FF3.6+ */ background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.5))); /* Chrome,Safari4+ */background-image: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%); /* Chrome10+,Safari5.1+ */background-image: -o-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%); /* Opera 11.10+ */background-image: -ms-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%); /* IE10+ */background-image: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%); /* W3C */filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#80000000',GradientType=0 ); /* IE6-9 */}#page_header.uh_tigre_peniche .bgback , #slideshow.uh_tigre_peniche .bgback {background-image:url("http://f-one.pt/wp/wp-content/uploads/2014/11/campervan_hire_portugal1.jpg");}#page_header.uh_tigre_peniche #sparkles , #slideshow.uh_tigre_peniche #sparkles{display:none}#page_header.uh_tigre_peniche , #slideshow.uh_tigre_peniche {background-color:#AAAAAA;background-image: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.5) 100%); /* FF3.6+ */ background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.5))); /* Chrome,Safari4+ */background-image: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%); /* Chrome10+,Safari5.1+ */background-image: -o-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%); /* Opera 11.10+ */background-image: -ms-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%); /* IE10+ */background-image: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%); /* W3C */filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#80000000',GradientType=0 ); /* IE6-9 */}#page_header.uh_salto .bgback , #slideshow.uh_salto .bgback {background-image:url("http://f-one.pt/wp/wp-content/uploads/2014/11/campervan_hire_portugal2.jpg");}#page_header.uh_salto #sparkles , #slideshow.uh_salto #sparkles{display:none}#page_header.uh_salto , #slideshow.uh_salto {background-color:#AAAAAA;background-image: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.5) 100%); /* FF3.6+ */ background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.5))); /* Chrome,Safari4+ */background-image: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%); /* Chrome10+,Safari5.1+ */background-image: -o-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%); /* Opera 11.10+ */background-image: -ms-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%); /* IE10+ */background-image: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%); /* W3C */filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#80000000',GradientType=0 ); /* IE6-9 */}#page_header.uh_3carrinhas_peniche .bgback , #slideshow.uh_3carrinhas_peniche .bgback {background-image:url("http://f-one.pt/wp/wp-content/uploads/2014/11/campervan_hire_portugal3.jpg");}#page_header.uh_3carrinhas_peniche #sparkles , #slideshow.uh_3carrinhas_peniche #sparkles{display:none}#page_header.uh_3carrinhas_peniche , #slideshow.uh_3carrinhas_peniche {background-color:#AAAAAA;background-image: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.5) 100%); /* FF3.6+ */ background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.5))); /* Chrome,Safari4+ */background-image: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%); /* Chrome10+,Safari5.1+ */background-image: -o-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%); /* Opera 11.10+ */background-image: -ms-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%); /* IE10+ */background-image: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%); /* W3C */filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#80000000',GradientType=0 ); /* IE6-9 */}#page_header.uh_jantar .bgback , #slideshow.uh_jantar .bgback {background-image:url("http://f-one.pt/wp/wp-content/uploads/2014/11/campervan_hire_portugal4.jpg");}#page_header.uh_jantar #sparkles , #slideshow.uh_jantar #sparkles{display:none}#page_header.uh_jantar , #slideshow.uh_jantar {background-color:#AAAAAA;background-image: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.5) 100%); /* FF3.6+ */ background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.5))); /* Chrome,Safari4+ */background-image: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%); /* Chrome10+,Safari5.1+ */background-image: -o-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%); /* Opera 11.10+ */background-image: -ms-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%); /* IE10+ */background-image: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%); /* W3C */filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#80000000',GradientType=0 ); /* IE6-9 */}#page_header.uh_loading_boards .bgback , #slideshow.uh_loading_boards .bgback {background-image:url("http://f-one.pt/wp/wp-content/uploads/2014/11/campervan_hire_portugal5.jpg");}#page_header.uh_loading_boards #sparkles , #slideshow.uh_loading_boards #sparkles{display:none}#page_header.uh_loading_boards , #slideshow.uh_loading_boards {background-color:#AAAAAA;background-image: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.5) 100%); /* FF3.6+ */ background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.5))); /* Chrome,Safari4+ */background-image: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%); /* Chrome10+,Safari5.1+ */background-image: -o-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%); /* Opera 11.10+ */background-image: -ms-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%); /* IE10+ */background-image: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%); /* W3C */filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#80000000',GradientType=0 ); /* IE6-9 */}#page_header.uh_l_point .bgback , #slideshow.uh_l_point .bgback {background-image:url("http://f-one.pt/wp/wp-content/uploads/2014/11/campervan_hire_portugal6.jpg");}#page_header.uh_l_point #sparkles , #slideshow.uh_l_point #sparkles{display:none}#page_header.uh_l_point , #slideshow.uh_l_point {background-color:#AAAAAA;background-image: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.5) 100%); /* FF3.6+ */ background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.5))); /* Chrome,Safari4+ */background-image: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%); /* Chrome10+,Safari5.1+ */background-image: -o-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%); /* Opera 11.10+ */background-image: -ms-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%); /* IE10+ */background-image: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%); /* W3C */filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#80000000',GradientType=0 ); /* IE6-9 */}#page_header.uh_por_do_sol .bgback , #slideshow.uh_por_do_sol .bgback {background-image:url("http://f-one.pt/wp/wp-content/uploads/2014/11/campervan_hire_portugal7.jpg");}#page_header.uh_por_do_sol #sparkles , #slideshow.uh_por_do_sol #sparkles{display:none}#page_header.uh_por_do_sol , #slideshow.uh_por_do_sol {background-color:#AAAAAA;background-image: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.5) 100%); /* FF3.6+ */ background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.5))); /* Chrome,Safari4+ */background-image: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%); /* Chrome10+,Safari5.1+ */background-image: -o-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%); /* Opera 11.10+ */background-image: -ms-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%); /* IE10+ */background-image: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%); /* W3C */filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#80000000',GradientType=0 ); /* IE6-9 */}#page_header.uh_ricardo_livro .bgback , #slideshow.uh_ricardo_livro .bgback {background-image:url("http://f-one.pt/wp/wp-content/uploads/2014/06/campervan_hire_portugal1.jpg");}#page_header.uh_ricardo_livro #sparkles , #slideshow.uh_ricardo_livro #sparkles{display:none}#page_header.uh_ricardo_livro , #slideshow.uh_ricardo_livro {background-color:#AAAAAA;background-image: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.5) 100%); /* FF3.6+ */ background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.5))); /* Chrome,Safari4+ */background-image: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%); /* Chrome10+,Safari5.1+ */background-image: -o-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%); /* Opera 11.10+ */background-image: -ms-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%); /* IE10+ */background-image: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%); /* W3C */filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#80000000',GradientType=0 ); /* IE6-9 */}#page_header.uh_mesa_e_cadeiras .bgback , #slideshow.uh_mesa_e_cadeiras .bgback {background-image:url("http://f-one.pt/wp/wp-content/uploads/2014/11/campervan_hire_portugal8.jpg");}#page_header.uh_mesa_e_cadeiras #sparkles , #slideshow.uh_mesa_e_cadeiras #sparkles{display:none}#page_header.uh_mesa_e_cadeiras , #slideshow.uh_mesa_e_cadeiras {background-color:#AAAAAA;background-image: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.5) 100%); /* FF3.6+ */ background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.5))); /* Chrome,Safari4+ */background-image: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%); /* Chrome10+,Safari5.1+ */background-image: -o-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%); /* Opera 11.10+ */background-image: -ms-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%); /* IE10+ */background-image: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%); /* W3C */filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#80000000',GradientType=0 ); /* IE6-9 */}#page_header.uh_avestruz .bgback , #slideshow.uh_avestruz .bgback {background-image:url("http://f-one.pt/wp/wp-content/uploads/2014/11/campervan_hire_portugal9.jpg");}#page_header.uh_avestruz #sparkles , #slideshow.uh_avestruz #sparkles{display:none}#page_header.uh_avestruz , #slideshow.uh_avestruz {background-color:#AAAAAA;background-image: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.5) 100%); /* FF3.6+ */ background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.5))); /* Chrome,Safari4+ */background-image: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%); /* Chrome10+,Safari5.1+ */background-image: -o-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%); /* Opera 11.10+ */background-image: -ms-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%); /* IE10+ */background-image: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%); /* W3C */filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#80000000',GradientType=0 ); /* IE6-9 */}#page_header.uh_cardeli_familia .bgback , #slideshow.uh_cardeli_familia .bgback {background-image:url("http://f-one.pt/wp/wp-content/uploads/2014/11/campervan_hire_portugal11.jpg");}#page_header.uh_cardeli_familia #sparkles , #slideshow.uh_cardeli_familia #sparkles{display:none}#page_header.uh_cardeli_familia , #slideshow.uh_cardeli_familia {background-color:#AAAAAA;background-image: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.5) 100%); /* FF3.6+ */ background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.5))); /* Chrome,Safari4+ */background-image: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%); /* Chrome10+,Safari5.1+ */background-image: -o-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%); /* Opera 11.10+ */background-image: -ms-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%); /* IE10+ */background-image: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%); /* W3C */filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#80000000',GradientType=0 ); /* IE6-9 */}#page_header.uh_por_do_dol_ricardo_bravo .bgback , #slideshow.uh_por_do_dol_ricardo_bravo .bgback {background-image:url("http://f-one.pt/wp/wp-content/uploads/2014/11/campervan_hire_portugal12.jpg");}#page_header.uh_por_do_dol_ricardo_bravo #sparkles , #slideshow.uh_por_do_dol_ricardo_bravo #sparkles{display:none}#page_header.uh_por_do_dol_ricardo_bravo , #slideshow.uh_por_do_dol_ricardo_bravo {background-color:#AAAAAA;background-image: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.5) 100%); /* FF3.6+ */ background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.5))); /* Chrome,Safari4+ */background-image: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%); /* Chrome10+,Safari5.1+ */background-image: -o-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%); /* Opera 11.10+ */background-image: -ms-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%); /* IE10+ */background-image: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%); /* W3C */filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#80000000',GradientType=0 ); /* IE6-9 */}#page_header.uh_ervas_e_sup_insuflavel .bgback , #slideshow.uh_ervas_e_sup_insuflavel .bgback {background-image:url("http://f-one.pt/wp/wp-content/uploads/2014/11/campervan_hire_portugal13.jpg");}#page_header.uh_ervas_e_sup_insuflavel #sparkles , #slideshow.uh_ervas_e_sup_insuflavel #sparkles{display:none}#page_header.uh_ervas_e_sup_insuflavel , #slideshow.uh_ervas_e_sup_insuflavel {background-color:#AAAAAA;background-image: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.5) 100%); /* FF3.6+ */ background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.5))); /* Chrome,Safari4+ */background-image: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%); /* Chrome10+,Safari5.1+ */background-image: -o-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%); /* Opera 11.10+ */background-image: -ms-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%); /* IE10+ */background-image: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%); /* W3C */filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#80000000',GradientType=0 ); /* IE6-9 */}/* GENERAL COLOR */
+
+	 a:hover, 
+	.cart_details .checkout, 
+	.info_pop .buyit, 
+	.m_title, 
+	.smallm_title, 
+	.circle_title, 
+	.feature_box .title, 
+	.services_box .title, 
+	.latest_posts.default-style .hoverBorder:hover h6, 
+	.latest_posts.style2 ul.posts .title, 
+	.latest_posts.style3 ul.posts .title, 
+	.recentwork_carousel li .details h4, 
+	.acc-group.default-style > button, 
+	.acc-group.style3 > button:after, 
+	.screenshot-box .left-side h3.title, 
+	.vertical_tabs .tabbable .nav>li>a:hover, 
+	.vertical_tabs .tabbable .nav>li.active>a, 
+	.services_box.style2 .box .list li, 
+	.shop-latest .tabbable .nav li.active a, 
+	.product-list-item:hover .details h3, 
+	.latest_posts.style3 ul.posts .title a,
+	.statbox h4 , #bbpress-forums .bbp-topics li.bbp-body .bbp-topic-title > a
+	{color:#3cb4e8;}
+	
+	.acc-group.style3 > button:hover, 
+	.acc-group.style3 > button:hover:after 
+	{ color:#3cb4e8 ;}
+
+	.tabs_style1 > ul.nav > li.active > a, 
+	header.style1, 
+	header.style2 #logo a, 
+	header.style3 #logo a 
+	{border-top: 3px solid #3cb4e8;}
+
+nav#main_menu > ul > li.active > a, 
+nav#main_menu > ul > li > a:hover, 
+nav#main_menu > ul > li:hover > a, 
+.social-icons li a:hover, 
+#action_box, 
+body .circlehover,
+body .flex-direction-nav li a:hover,
+body .iosSlider .item .caption.style1 .more:before,
+body .iosSlider .item .caption.style1 .more:after,
+body .iosSlider .item .caption.style2 .more,
+body .nivo-directionNav a:hover,
+body #wowslider-container a.ws_next:hover,
+body #wowslider-container a.ws_prev:hover,
+.br-next:hover, .br-previous:hover,
+body .ca-more,
+body .title_circle,
+body .title_circle:before,
+body ul.links li a,
+.hg-portfolio-sortable #portfolio-nav li a:hover, .hg-portfolio-sortable #portfolio-nav li.current a,
+.iosSlider .item .caption.style1 .more:before, .iosSlider .item .caption.style1 .more:after,
+.btn-flat ,
+body.woocommerce a.button:hover, 
+body.woocommerce button.button:hover, 
+body.woocommerce input.button:hover, 
+body.woocommerce #respond input#submit:hover, 
+body.woocommerce #content input.button:hover, 
+body.woocommerce-page a.button:hover, 
+body.woocommerce-page button.button:hover, 
+body.woocommerce-page input.button:hover, 
+body.woocommerce-page #respond input#submit:hover, 
+body.woocommerce-page #content input.button:hover,
+body.woocommerce a.button, 
+body.woocommerce button.button, 
+body.woocommerce input.button, 
+body.woocommerce #respond input#submit, 
+body.woocommerce #content input.button, 
+body.woocommerce-page a.button, 
+body.woocommerce-page button.button, 
+body.woocommerce-page input.button, 
+body.woocommerce-page #respond input#submit, 
+body.woocommerce-page #content input.button,
+body.woocommerce a.button.alt, 
+body.woocommerce button.button.alt, 
+body.woocommerce input.button.alt, 
+body.woocommerce #respond input#submit.alt, 
+body.woocommerce #content input.button.alt, 
+body.woocommerce-page a.button.alt, 
+body.woocommerce-page button.button.alt, 
+body.woocommerce-page input.button.alt, 
+body.woocommerce-page #respond input#submit.alt, 
+body.woocommerce-page #content input.button.alt,
+body .woocommerce a.button, 
+body .woocommerce button.button, 
+body .woocommerce input.button, 
+body .woocommerce #respond input#submit, 
+body .woocommerce #content input.button, 
+body .woocommerce-page a.button, 
+body .woocommerce-page button.button, 
+body .woocommerce-page input.button, 
+body .woocommerce-page #respond input#submit, 
+body .woocommerce-page #content input.button ,
+span.zonsale,
+.sidebar .widget ul.menu li.active > a,
+.sidebar .widget ul.product-categories li.active > a, 
+.sidebar .widget ul.pagenav li.active a, 
+.sidebar .widget ul.menu li.current-cat > a, 
+.sidebar .widget ul.product-categories li.current-cat > a, 
+.sidebar .widget ul.pagenav li.current-cat > a, 
+.sidebar .widget ul.menu li > a:hover, 
+.sidebar .widget ul.product-categories li > a:hover, 
+.sidebar .widget ul.pagenav li a:hover,
+#limited_offers li:after,
+.login-panel .create_account, 
+.login-panel input[type=submit], 
+.register-panel input[type=submit], 
+.forgot-panel input[type=submit], 
+.login-panel .login_facebook ,
+#bbpress-forums div.bbp-search-form input[type=submit], #bbpress-forums .bbp-submit-wrapper button, #bbpress-forums #bbp-your-profile fieldset.submit button {background-color:#3cb4e8;}
+
+.breadcrumbs li:after {
+	border-left-color: #3cb4e8;
+}
+
+span.zonsale:before ,#limited_offers li:before{border-color:#3cb4e8  transparent transparent;}
+
+	.how_to_shop .number, .newsletter-signup input[type=submit], .vertical_tabs .tabbable .nav>li.active>a>span, .vertical_tabs .tabbable .nav>li>a:hover>span, #map_controls, .hg-portfolio-sortable #portfolio-nav li.current a, .ptcarousel .controls > a:hover, .itemLinks span a:hover, .product-list-item .details .actions a, .shop-features .shop-feature:hover, .btn-flat, .redbtn, #sidebar ul.menu li a:hover, .imgboxes_style1 .hoverBorder h6, .feature_box.style3 .box:hover, .services_box .box:hover .icon, .latest_posts.default-style .hoverBorder h6, .process_steps .step.intro, .recentwork_carousel.style2 li a .details .plus, .gobox.ok, .hover-box:hover, .recentwork_carousel li .details > .bg, .circlehover:before,.iosSlider .item .caption.style1 .more:before, .iosSlider .item .caption.style1 .more:after ,.iosSlider .item .caption.style2 .more {background-color:#3cb4e8;}
+	#action_box:before ,#action_box:after, header#header.style1{border-top-color:#3cb4e8;}
+
+	/* BORDER LEFT */
+	.process_steps .step.intro:after,
+	body .nivo-caption,
+	body .flex-caption,
+	body #wowslider-container .ws-title
+	{border-left-color:#3cb4e8; }
+
+	.theHoverBorder:hover {box-shadow:0 0 0 5px #3cb4e8 inset;}
+
+	.offline-page .containerbox {border-bottom:5px solid #3cb4e8; }
+
+	.offline-page .containerbox:after {border-top: 20px solid #3cb4e8;}
+
+	header#header.style2 #logo a {border-top: 3px solid #3cb4e8;}
+
+	body .iosSlider .item .caption.style2 .title_big, body .iosSlider .item .caption.style2 .title_small {border-left: 5px solid #3cb4e8; }
+	body .iosSlider .item .caption.style2.fromright .title_big, body .iosSlider .item .caption.style2.fromright .title_small {border-right: 5px solid #3cb4e8 ; }
+
+/* Buddypress styles */
+#buddypress form#whats-new-form p.activity-greeting:after {border-top-color: #3cb4e8;}
+
+#buddypress input[type=submit],
+#buddypress input[type=button],
+#buddypress input[type=reset] ,
+#buddypress .activity-list li.load-more a {background: #3cb4e8;}
+
+#buddypress div.item-list-tabs ul li.selected a,
+#buddypress div.item-list-tabs ul li.current a {border-top: 2px solid #3cb4e8;}
+
+#buddypress form#whats-new-form p.activity-greeting,
+.widget.buddypress ul.item-list li:hover {background-color: #3cb4e8;}
+
+.widget.buddypress div.item-options a.selected ,
+#buddypress div.item-list-tabs ul li.selected a,
+#buddypress div.item-list-tabs ul li.current a ,
+#buddypress div.activity-meta a ,
+#buddypress div.activity-meta a:hover,
+#buddypress .acomment-options a {color:#3cb4e8;}
+
+
+
+/* HEADINGS */
+h1 , .page-title{
+	
+	font-family:"Lato" , "Helvetica Neue", Helvetica, Arial, sans-serif;	font-size:36px;	line-height:40px;
+
+}
+
+h2 {
+	
+	font-family:"Lato" , "Helvetica Neue", Helvetica, Arial, sans-serif;	font-size:30px;	line-height:40px;
+
+}
+
+h3 {
+	
+	font-family:"Lato" , "Helvetica Neue", Helvetica, Arial, sans-serif;	font-size:24px;	line-height:40px;
+
+}
+
+h4 {
+	
+	font-family:"Lato" , "Helvetica Neue", Helvetica, Arial, sans-serif;	font-size:18px;	line-height:20px;
+
+}
+
+h5 {
+	
+	font-family:"Lato" , "Helvetica Neue", Helvetica, Arial, sans-serif;	font-size:14px;	line-height:20px;
+
+}
+
+h6 {
+	
+	font-family:"Lato" , "Helvetica Neue", Helvetica, Arial, sans-serif;	font-size:12px;	line-height:20px;
+
+}
+
+/* Body */
+body{
+	
+	font-family:"Lato" , "Helvetica Neue", Helvetica, Arial, sans-serif;	font-size:13px;	line-height:19px;	
+}
+/* Grey Area */
+body .gray-area {
+	
+	font-family:"Lato" , "Helvetica Neue", Helvetica, Arial, sans-serif;	font-size:13px;	line-height:19px;	
+}
+/* Footer Area */
+body #footer {
+	
+	font-family:"Lato" , "Helvetica Neue", Helvetica, Arial, sans-serif;	font-size:13px;	line-height:19px;	
+}
+
+body #page_wrapper , body.boxed #page_wrapper {
+	background-color:#ffffff;		background-repeat:repeat;	background-position:left top;	background-attachment:scroll;}
+
+.gray-area {
+			background-repeat:repeat;	background-position:left top;	background-attachment:scroll;}
+
+
+header#header , .oldie #page_wrapper header#header {
+					
+}
+
+footer#footer {
+					}
+
+footer#footer .bottom {	border-top:5px solid #484848; }
+
+nav#main_menu > ul > li > a {
+	
+	font-family:"Lato" , "Helvetica Neue", Helvetica, Arial, sans-serif;	font-size:14px;	line-height:14px;	color:#fff;	font-weight:700;
+}
+
+
+
+.topnav > li > a { color:#ffffff ;}.topnav > li > a:hover { color:#3cb4e8 ;}.team_member a { pointer-events: none; }
+
+.team_member img {
+ width: 200px !important;
+ height: 150px !important;
+ }
+
+header#header.style2 #logo a {
+background: transparent !important;
+border-bottom: none !important;
+border-top: none !important; }
+
+header#header.style2 #logo a:after { border: 0 !important; }
+
+a:hover { color: #frfrfr !important; }
+
+#sidebar {background:#ebebeb;}
+#sidebar .title { 
+color: #3cb4e8;
+background-image: ;
+background-repeat: no-repeat;
+}
+
+#open_sliding_panel {
+color: #ffffff;
+}
+
+#sliding_panel {
+background-color: #d2eaf8;
+}
+
+#footer a {
+color: #3cb1e3;
+} 
+
+.hg-portfolio-sortable ul#thumbs li .inner-item h4 {
+pointer-events: none !important;
+}
+
+.hg-portfolio-sortable #sorting {
+display: none; !important;
+}
+
+.fundo {
+	background-color: #6db444;
+	z-index: 0;
+	height: 32px;
+	width: 190px;
+}
+#two-column{
+	width: 450px;
+}
+#two-column #left{
+	width: 200px;
+	float: left;
+}
+#two-column #right{
+	width: 200px;
+	float: right;
+}
+#two-column p{
+	margin-bottom: 2px;
+}
+#two-column input[type="text"]{
+	border:none;
+	border:1px solid #009cdd;
+	font-size :12px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 4px;
+	width: 400px;
+	padding: 4px;
+}
+#two-column input[type="email"]{
+	border:none;
+	border:1px solid #009cdd;
+	font-size :12px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 4px;
+	width: 210px;
+	padding: 4px;
+}
+#two-column #right input[type="text"], #two-column #left input[type="text"]{
+	width:200px;
+}
+#two-column textarea {
+    position: relative;
+    padding: 4px;
+    border:1px solid #009cdd;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 4px;
+    width: 460px;
+    height: 100px;
+}
+#two-column input[type="submit"]{
+	padding:8px 28px;
+	background:#009cdd;
+	color:#fff;
+	border: 1px solid #fff;
+	float:right;
+	font-size: 14px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+#two-column input[type="text"]:focus, #two-column input[type="email"]:focus, #two-column textarea:focus{
+	background: #eee;
+}
+#two-column input[type="submit"]:hover{
+	background:#6fb445;
+	color:#222;
+	border: 1px solid #eee;
+}
