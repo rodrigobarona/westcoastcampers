@@ -61,7 +61,7 @@ background-color: #3cb4e8;
 .jumbotron input[name="PromoCode"] { width: 165px; }
 
 .jumbotron select[name="DropoffTime"],
-.jumbotron select[name="pickupTime"] {width: 113px;}
+.jumbotron select[name="pickupTime"] {width: 163px;}
 
 .webstep2 .vehicle-image {width: 85%;}
 
