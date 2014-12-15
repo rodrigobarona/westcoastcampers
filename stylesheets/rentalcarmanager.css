@@ -7,20 +7,26 @@ body {background-color: #fff;}
 .topnav {margin-right: 30px;}
 #main_menu {margin-right: 20px;}
 
-.smallm_title.bigger {text-transform: uppercase; margin-top: 50px;}
+hr {margin-top: 8px;
+margin-bottom: 8px;}
+.btn-success {
 
-
-.alert-danger {
-color: #fff;
-background-color: transparent;
-border: none;
+background-color: #3cb4e8;
+border-color: #3598C3;
 }
 
+.btn-success:hover, .btn-success:focus, .btn-success.focus, .btn-success:active, .btn-success.active, .open>.dropdown-toggle.btn-success {
+	background-color: #3598C3;
+border-color: #2D7C9E;
+}
+
+.ui-datepicker-trigger {cursor: pointer;}
+.smallm_title.bigger {text-transform: uppercase; margin-top: 50px;}
+
 .webstep1 {
-height:99px;
-padding: 0;
+padding: 20px 0;
 color: #fff;
-border-top: 0;
+border-top: 2px solid #fff;
 border-bottom: 1px solid #fff;
 position: relative;
 background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.2) 100%);
@@ -34,15 +40,28 @@ background-color: #3cb4e8;
 }
 
 .webstep1 .row { margin-bottom: 5px;}
-.webstep1 h4 { font-weight: normal; font-size: 22px; padding-top:22px; }
+.webstep2 .row  { margin-bottom: 0;}
+.webstep1 h4 { font-weight: normal; font-size: 22px; padding-top:10px; }
 .webstep1 h4 em {font-weight: bold;}
 
 .webstep2 {}
 
-.jumbotron {padding: 30px 70px; overflow: hidden;}
+.jumbotron {padding: 20px 30px !important; overflow: hidden;}
 .jumbotron .row {margin-bottom: 5px;}
+.jumbotron .form-group {width: 100%;}
 
-label[for="PickupDay"],
-label[ for="YoungestDriver"] {margin-left: 6%;}
+.jumbotron label[for="PickupDay"],
+.jumbotron label[for="YoungestDriver"] {margin-left: 0;}
+
+.jumbotron select[name='PickupLocationID'],
+.jumbotron select[name='DropoffLocationID'],
+.jumbotron select[name="driverage" ] {width: 125px;}
+
+.jumbotron input[name="PromoCode"] { width: 165px; }
+
+.jumbotron select[name="DropoffTime"],
+.jumbotron select[name="pickupTime"] {width: 113px;}
+
+.webstep2 .vehicle-image {width: 85%;}
 
 
