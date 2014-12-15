@@ -24,9 +24,10 @@ border-color: #2D7C9E;
 .smallm_title.bigger {text-transform: uppercase; margin-top: 50px;}
 
 .webstep1 {
-padding: 20px 0;
+height:99px;
+padding: 0;
 color: #fff;
-border-top: 2px solid #fff;
+border-top: 0;
 border-bottom: 1px solid #fff;
 position: relative;
 background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.2) 100%);
