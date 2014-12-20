@@ -51,6 +51,46 @@ return (true);
 
 }
 
+function checkNumeric(objName)
+{        var numberfield = objName;
+   if (chkNumeric(objName) == false)
+   {  numberfield.select();
+      numberfield.focus();
+      return false;
+   }
+   else
+   {        return true;
+   }
+}
+function chkNumeric(objName)
+{   // only allow 0-9 be entered, plus any values passed
+var checkOK = "0123456789";
+var checkStr = objName;
+var allValid = true;
+var decPoints = 0;
+var allNum = "";
+
+   if  ((checkStr.value.length) != 0)
+   {        for (i = 0;  i < checkStr.value.length;  i++)
+            {        ch = checkStr.value.charAt(i);
+               for (j = 0;  j < checkOK.length;  j++)
+         if (ch == checkOK.charAt(j))
+         break;
+         if (j == checkOK.length)
+         {     allValid = false;
+            break;
+               }
+               if (ch != ",")
+                  allNum += ch;
+      }
+            if (!allValid)
+      {  alert("Please enter Numeric value");
+            return (false);
+      }
+   }
+
+}
+
 jQuery(function () {
       jQuery('#txtStartDate').datepicker(
        {
