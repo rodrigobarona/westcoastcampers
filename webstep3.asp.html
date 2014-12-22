@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>West Coast Campers</title>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/flick/jquery-ui.css" />
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+
+<script src="https://rodrigobarona.github.io/westcoastcampers/javascripts/rentalcarmanager.js"></script>
+
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+
+<link rel='stylesheet' id='zn-templtecss-css'  href='css/template.css' type='text/css' media='all' />
+<link rel='stylesheet' id='zn-templtecss-css'  href='css/options.css' type='text/css' media='all' />
+
+<link rel='stylesheet' id='rentalcarmanager-css'  href='css/rentalcarmanager.css' type='text/css' media='all' />
+
+
+</head>
+<body class="webstep3">
+
+<div class="container-fluid">
+
+<!--- HEADER -->
+
+<header id="header" class="style2 ">
+            <div class="container-fluid">
+                <!-- logo -->
+                <h3 id="logo"><a href="http://www.westcoastcampers.pt/"><img src="https://rodrigobarona.github.io/westcoastcampers/images/logo.png" alt="West Coast Campers" title="campervan rental Portugal" /></a></h3>                
+        <!-- HEADER ACTION -->
+              <ul class="topnav navRight">
+        <li><a href="mailto:info@westcoastcampers.com.pt" id="open_sliding_panel">
+             CONTACT US          </a>
+        </li>
+      </ul>
+                     
+        <!-- search -->
+        
+        <!-- main menu -->
+        <nav id="main_menu" class="">
+                    <ul id="menu-main-menu" class="sf-menu nav clearfix"><li id="menu-item-1863" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1863"><a href="http://f-one.pt/wp/">HOME</a></li>
+<li id="menu-item-1962" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-1746 current_page_item menu-item-has-children menu-item-1962 active"><a href="http://f-one.pt/wp/campervans-2/">CAMPERVANS</a>
+
+</li>
+<li id="menu-item-1959" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1959"><a href="http://f-one.pt/wp/the-experience/">THE EXPERIENCE</a></li>
+<li id="menu-item-2043" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2043"><a href="http://f-one.pt/wp/customize/">CUSTOMIZE</a>
+
+</li>
+<li id="menu-item-2416" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2416"><a href="http://f-one.pt/wp/promotions/">PROMOTIONS</a>
+
+</li>
+<li id="menu-item-2411" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2411"><a href="http://f-one.pt/wp/about-us/">ABOUT US</a>
+</li>
+</ul>       </nav>
+        <!-- end main_menu -->
+      </div>
+    </header>
+    
+    <div id="page_header" class="uh_3carrinhas_peniche bottom-shadow" style="height:500px;min-height:500px">
+      <div class="bgback"></div>
+      
+      <div data-images="http://f-one.pt/wp/wp-content/themes/kallyas/images/" id="sparkles"></div>
+
+    </div>
+
+
+
+<form method='post' action='webstep4.asp?dir=Rate&categoryStatus=1'  name='Rate'  id='Rate'  ><input type='hidden' name='categoryStatus' size='5' value='1' /><input type='hidden' name='CarSizeID' size='5' value='1' /><input type='hidden' name='PickupLocationID' size='5' value='1' /><input type='hidden' name='DropoffLocationID' size='5' value='1' /><input type='hidden' name='PickupDate' size='15' value='27/December/2014' /><input type='hidden' name='DropoffDate' size='15' value='6/January/2015' /><input type='hidden' name='PickupTime' size='15' value='11:00' /><input type='hidden' name='DropoffTime' size='15' value='10:00' /><input type='hidden' name='TotalRentalDays' size='15' value='10' />
+<!-- +++++++++++++++++++++++++++++++++++++++++++++++==
+'== Module Name : Web Site Interface==
+'== File Name :  webbookingstep3.asp==
+'== Method Name : HTML Page Starts here - Allows entry and selection of extra fees, kms, and insurance options==
+'== Tables Used : CarRateHourly, QSeason, Location==
+'== +++++++++++++++++++++++++++++++++++++++++++++++   -->
+
+
+<!-- +++++++++++++++++++++++++++++++++++++++++++++++==
+'== Module Name : Web Site Interface ==
+'== File Name :  webbookingstep3.asp==
+'== Method Name : FindTheRate2==
+== Method Description :  Selects Required Rates based on Rate Structure==
+'== Tables Used : WebLocationCategory, CarSize, WebRelocationFees, QCarRateDetails, Discount==
+'== +++++++++++++++++++++++++++++++++++++++++++++++   -->
+
+<!-- +++++++++++++++++++++++++++++++++++++++++++++++==
+'== Module Name : Web Site Interface==
+'== File Name :  webbookingstep3.asp==
+'== Method Name : ExtraForm==
+'== Method Description :  Selects Required Extra fees based Location selection and displays to screen==
+'== Tables Used : ExtraFees==
+'== +++++++++++++++++++++++++++++++++++++++++++++++   -->
+
+
+<!-- +++++++++++++++++++++++++++++++++++++++++++++++==
+'== Module Name : Web Site Interface==
+'== File Name :  webbookingstep3.asp==
+'== Method Name : InsuranceExtra==
+'== Method Description :  Selects Required Insurance fees based Location selection and displays to screen==
+'== Tables Used : ExtraFees==
+'== +++++++++++++++++++++++++++++++++++++++++++++++   -->
+
+<!-- +++++++++++++++++++++++++++++++++++++++++++++++==
+'== Module Name : Web Site Interface==
+'== File Name :  webbookingstep3.asp==
+'== Method Name : KmFeesSelection==
+'== Method Description :  Selects valid KM fees based on Location and Web Available flags and displays to screen==
+'== Tables Used : ExtraFees==
+'== +++++++++++++++++++++++++++++++++++++++++++++++   -->
+
+
+
+
+
+<!-- +++++++++++++++++++++++++++++++++++++++++++++++==
+'== Module Name : Web Site Interface==
+'== File Name :  webbookingstep3.asp==
+'== Method Name : HTML Page Starts here - Allows entry and selection of extra fees, kms, and insurance options==
+'== Tables Used : CarRateHourly, QSeason, Location==
+'== +++++++++++++++++++++++++++++++++++++++++++++++   -->
+
+<div class="container">
+        <h4 class="smallm_title centered bigger"><span>Car Rental Pickup and Dropoff Dates Times</span></h4>
+
+
+<div class="row">
+         <div class="col-xs-5">
+         <p class="text-center"><img src='https://secure2.rentalcarmanager.com/DB/PtWestCoastCampers273/traffic.gif' class="vehicle-image" alt='' /></p>
+         </div>
+
+
+         <div class="col-xs-7">
+          <h2>Campervan <small>5 persons</small></h2>
+          <hr />
+
+              <div class="row">
+              <div class="col-xs-2">
+              <p class="text-left"><strong>Pickup:</strong></p>
+              </div>
+              <div class="col-xs-3">
+              <p class="text-right">Lisbon - office</p>
+              </div>
+              <div class="col-xs-1">
+              &nbsp;
+              </div>
+              <div class="col-xs-2">
+              <p class="text-left"><strong>Pickup Date:</strong></p>
+              </div>
+              <div class="col-xs-4">
+              <p class="text-right">Saturday, 27/Dec/2014&nbsp;11:00</p>
+              </div>
+              </div>
+
+              <div class="row">
+              <div class="col-xs-2">
+              <p class="text-left"><strong>Return:</strong></p>
+              </div>
+              <div class="col-xs-3">
+              <p class="text-right">Lisbon - office</p>
+              </div>
+              <div class="col-xs-1">
+              
+              </div>
+              <div class="col-xs-2">
+              <p class="text-left"><strong>Return Date:</strong></p>
+              </div>
+              <div class="col-xs-4">
+              <p class="text-right">Tuesday, 6/Jan/2015&nbsp;10:00</p>
+              </div>
+              </div>
+      <hr />
+
+              <input type='hidden' name='HourRate' value='0' />
+              <input type='hidden' name='RateStructureID1' size='5' value='5' />
+              <input type='hidden' name='RateName1' size='5' value='7 to 14 days' />
+              <input type='hidden' name='actureNoOfDaysEachSeason1' size='5' value='1.92' />
+              <input type='hidden' name='NoOfDaysEachSeason1' size='5' value='2' />
+              <input type='hidden' name='Season1' size='5' value='Reduced Season 2015' />
+              <input type='hidden' name='SeasonID1' size='5' value='153' />
+              <input type='hidden' name='RateStructureID2' size='5' value='5' />
+              <input type='hidden' name='RateName2' size='5' value='7 to 14 days' />
+              <input type='hidden' name='actureNoOfDaysEachSeason2' size='5' value='8' />
+              <input type='hidden' name='NoOfDaysEachSeason2' size='5' value='8' />
+              <input type='hidden' name='Season2' size='5' value='Low Season 2014' />
+              <input type='hidden' name='SeasonID2' size='5' value='177' />
+              <input type='hidden' name='SeasonCount' value='2' />
+              <input type='hidden' name='DiscountID' value='0'>
+              <input type='hidden'  name='DiscountRate' value='0'>
+              <input type='hidden'  name='DiscountType' value='p'>
+
+        <div class="row">
+              <div class="col-xs-7">
+              <p class="text-left"><strong>2 Days @ &#8364; 72.00 (per day)</strong></p>
+              <input  type='hidden'  name='StandardRate1'  value='72' />
+              <input  type='hidden'  name='Rate1'  value='72' />
+              </div>
+              <div class="col-xs-5">
+              <p class="text-right">&#8364; 144.00</p>
+              </div>
+          </div>
+
+        <div class="row">
+              <div class="col-xs-7">
+              <p class="text-left"><strong>8 Days @ &#8364; 88.00 (per day)</strong></p>
+              <input  type='hidden'  name='StandardRate2'  value='88' />
+              <input  type='hidden'  name='Rate2'  value='88' />
+              </div>
+              <div class="col-xs-5">
+              <p class="text-right">&#8364; 704.00</p>
+              </div>
+          </div>
+
+
+    <input  type='hidden'  name='TotalDays'  value='10' />
+    <input  type='hidden'  name='FixedDiscountID'  value='0' />
+    <input  type='hidden'  name='NoFreeDays'  value='0' />
+    <input  type='hidden'  name='FreeDayRate'  value='84.8' />
+    <input  type='hidden'  name='FreeDayExtraFeeID'  value='0' />
+
+    <hr />
+
+    <div class="row">
+              <div class="col-xs-12">
+              <p class="text-right lead"><strong>Total: <mark>&nbsp;&#8364; 848.00&nbsp;</mark></strong></p>
+    </div>
+
+</div>
+</div>
+
+</div>
+
+    <h4 class="smallm_title centered bigger"><span>Select Reduction in Renter's Liability you require</span></h4>
+
+
+<div class="radio">
+  <label><input type=radio  name=InsuranceID  Value=1 CHECKED><strong>"Risk Taker" Insurance</strong> (€2000 bond) <span class="badge">&#8364; 0.00</span><br />
+  <span class="text-muted">Standard liability</span></label>
+</div>
+
+<div class="radio">
+  <label><input type="radio" name="InsuranceID" value="3"><strong>"Take a Chance" Insurance</strong> (€900 bond) <span class="badge">+ &#8364; 12.00</span><br />
+    <span class="text-muted">Partial excess reduction</span></label>
+</div>
+
+<div class="radio">
+  <label><input type=radio  name=InsuranceID  Value=4 ><strong>"Stress Free" Insurance</strong> (€350 bond) <span class="badge">+ &#8364; 20.00</span><br />
+   <span class="text-muted">All inclusive cover</span> <span class="label label-danger">Most Popular</span></label>
+</div>
+
+
+   <h4 class="smallm_title centered bigger"><span>Select any extra items required with your Vehicle</span></h4>
+
+<div class="table-responsive">
+   <table class="table table-hover">
+    <thead>
+      <tr>
+          <th width="85%">Description</th>
+          <th width="10%">Price</th>
+          <th width="5%">QTY</th>
+      </tr>
+    </thead>
+
+<tbody>
+  <tr>
+    <td><label><input type='checkbox'  name='ExtraFeesID0' value='28' /> Campervan with A/C</label></td>
+    <td>&#8364; 3 (Daily)</td>
+    <td><input type='hidden' name='QTY0' size='2' value='1' onblur='checkNumeric(this);' class="form-control input-sm"  /></td>
+  </tr>
+    <input type='hidden'  name='MaxPrice0'  value='100' />
+    <input type='hidden'  name='ExtraFeesName0'  value='Campervan with A/C' />
+    <input type='hidden'  name='ExtraFees0'  value='3' />
+    <input type='hidden'  name='FeeType0' value='Daily' />
+    <input type='hidden'  name='GST0' value='True' />
+    <input type='hidden'  name='StampDuty0' value='False' />
+    <input type='hidden'  name='PercentageTotalCost0' value='False' />
+    <input type='hidden'  name='MerchantFee0' value='False' />
+
+  <tr>
+    <td><label><input type='checkbox'  name='ExtraFeesID1' value='2' /> GPS</label></td>
+    <td>&#8364; 5 (Daily)</td>
+    <td><input type='hidden' name='QTY1' size='2' value='1' onblur='checkNumeric(this);' class="form-control input-sm"  /></td>
+  </tr>
+    <input type='hidden'  name='MaxPrice1'  value='50' />
+    <input type='hidden'  name='ExtraFeesName1'  value='GPS' />
+    <input type='hidden'  name='ExtraFees1'  value='5' />
+    <input type='hidden'  name='FeeType1' value='Daily' />
+    <input type='hidden'  name='GST1' value='True' />
+    <input type='hidden'  name='StampDuty1' value='False' />
+    <input type='hidden'  name='PercentageTotalCost1' value='False' />
+    <input type='hidden'  name='MerchantFee1' value='False' />
+
+  <tr>
+    <td><label><input type='checkbox'  name='ExtraFeesID2' value='36' /> SUP inflatable board + paddle</label></td>
+    <td>&#8364; 30 (Daily)</td>
+    <td><input type='hidden' name='QTY2' size='2' value='1' onblur='checkNumeric(this);' class="form-control input-sm"  /></td>
+  </tr>
+    <input type='hidden'  name='MaxPrice2'  value='0' />
+    <input type='hidden'  name='ExtraFeesName2'  value='SUP inflatable board + paddle' />
+    <input type='hidden'  name='ExtraFees2'  value='30' />
+    <input type='hidden'  name='FeeType2' value='Daily' />
+    <input type='hidden'  name='GST2' value='True' />
+    <input type='hidden'  name='StampDuty2' value='False' />
+    <input type='hidden'  name='PercentageTotalCost2' value='False' />
+    <input type='hidden'  name='MerchantFee2' value='False' />
+
+  <tr>
+    <td><label><input type='checkbox'  name='ExtraFeesID3' value='31' /> Surf wetsuit 3/2mm - available in S, M and C</label></td>
+    <td>&#8364; 10 (Daily)</td>
+    <td><input type='text' name='QTY3' size='2' value='1' onblur='checkNumeric(this);' class="form-control input-sm" /></td>
+  </tr>
+    <input type='hidden'  name='MaxPrice3'  value='0' />
+    <input type='hidden'  name='ExtraFeesName3'  value='Surf wetsuit 3/2mm - available in S, M and C' />
+    <input type='hidden'  name='ExtraFees3'  value='10' />
+    <input type='hidden'  name='FeeType3' value='Daily' />
+    <input type='hidden'  name='GST3' value='True' />
+    <input type='hidden'  name='StampDuty3' value='False' />
+    <input type='hidden'  name='PercentageTotalCost3' value='False' />
+    <input type='hidden'  name='MerchantFee3' value='False' />
+
+  <tr>
+    <td><label><input type='checkbox'  name='ExtraFeesID4' value='32' /> Surfboard</label></td>
+    <td>&#8364; 20 (Daily)</td>
+    <td><input type='text' name='QTY4' size='2' value='1' onblur='checkNumeric(this);' class="form-control input-sm" /></td>
+  </tr>
+    <input type='hidden'  name='MaxPrice4'  value='0' />
+    <input type='hidden'  name='ExtraFeesName4'  value='Surfboard' />
+    <input type='hidden'  name='ExtraFees4'  value='20' />
+    <input type='hidden'  name='FeeType4' value='Daily' />
+    <input type='hidden'  name='GST4' value='True' />
+    <input type='hidden'  name='StampDuty4' value='False' />
+    <input type='hidden'  name='PercentageTotalCost4' value='False' />
+    <input type='hidden'  name='MerchantFee4' value='False' />
+
+<tr>
+  <td><label><input type='checkbox'  name='ExtraFeesID5' value='13' /> Barbecue</label></td>
+  <td>&#8364; 35 (Fixed)</td>
+  <td><input type='hidden' name='QTY5' size='2' value='1' onblur='checkNumeric(this);' class="form-control input-sm"/></td>
+</tr>
+  <input type='hidden'  name='MaxPrice5'  value='0' />
+  <input type='hidden'  name='ExtraFeesName5'  value='Barbecue' />
+  <input type='hidden'  name='ExtraFees5'  value='35' />
+  <input type='hidden'  name='FeeType5' value='Fixed' />
+  <input type='hidden'  name='GST5' value='True' />
+  <input type='hidden'  name='StampDuty5' value='False' />
+  <input type='hidden'  name='PercentageTotalCost5' value='False' />
+  <input type='hidden'  name='MerchantFee5' value='False' />
+
+  <tr>
+    <td><label><input type='checkbox'  name='ExtraFeesID6' value='40' /> Bycicle rack for 2 bikes</label></td>
+    <td>&#8364; 35 (Fixed)</td>
+    <td><input type='hidden' name='QTY6' size='2' value='1' onblur='checkNumeric(this);' class="form-control input-sm"/></td>
+  </tr>
+
+  </tbody>
+
+  <tfoot>
+    <tr>
+    <td><input type='button' name='Back'  value='Back'  class='btn btn-default' onclick='javascript:history.back(-1)' />&nbsp;<input NAME=submit type='submit' class='btn btn-default' value='Email Me Quote'  /></td>
+    
+    <td colspan="2"><input NAME=submit type='submit' class='btn btn-success btn-block btn-lg' value='Book Now'  /></td>
+</tfoot>
+
+</table>
+</div>
+  </form>
+<!-- END RCM HTML CODE-->
+</div>
+<div class="container-fluid">
+<footer id="footer">
+<div class="container">
+        <div class="span12">
+          <div class="bottom fixclear">
+          
+                    
+                      
+            <div class="copyright">
+              
+              
+              <p><a href="http://www.westcoastcampers.com.pt." style="float:left; position:relative; margin-top:-60px; margin-left: 0px;" rel="nofollow"><img src="http://f-one.pt/wp/wp-content/uploads/2013/12/Capturar.jpg" alt="campervan_hire_portugal"></a>© 2014 |  West Coast Campers - campervan rental Portugal | rent-a-car license nº 169/2011
+
+
+
+</p>              
+              
+            </div><!-- end copyright -->
+              
+                      
+
+          </div><!-- end bottom -->
+        </div>
+      </div>
+</footer>
+</div>
+</body>
+</html>
+
