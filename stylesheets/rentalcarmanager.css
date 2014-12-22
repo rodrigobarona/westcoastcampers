@@ -24,10 +24,9 @@ border-color: #2D7C9E;
 .smallm_title.bigger {text-transform: uppercase; margin-top: 50px;}
 
 .webstep1 {
-height:99px;
-padding: 16px 0 0 0;
+padding: 20px 0;
 color: #fff;
-border-top: 0;
+border-top: 2px solid #fff;
 border-bottom: 1px solid #fff;
 position: relative;
 background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.2) 100%);
@@ -61,8 +60,23 @@ background-color: #3cb4e8;
 .jumbotron input[name="PromoCode"] { width: 165px; }
 
 .jumbotron select[name="DropoffTime"],
-.jumbotron select[name="pickupTime"] {width: 163px;}
+.jumbotron select[name="pickupTime"] {width: 113px;}
 
 .webstep2 .vehicle-image {width: 85%;}
+
+
+
+.webstep3 .vehicle-image {width: 70%;}
+.webstep3 .row  { margin-bottom: 0;}
+
+.webstep3 .form-control.input-sm {
+	height: 20px;
+	padding: 10px 10px;
+	text-align: center;
+}
+
+.webstep3 .table label {margin-bottom: 0;}
+.webstep3 .table>tbody>tr>td {vertical-align: middle;}
+
 
 
