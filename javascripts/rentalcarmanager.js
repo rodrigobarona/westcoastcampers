@@ -166,10 +166,8 @@ var mlength=obj.getAttribute? parseInt(obj.getAttribute("maxlength")) : ""
 if (obj.getAttribute && obj.value.length>mlength)
 obj.value=obj.value.substring(0,mlength)
 }
-</script>
 
-<script language="javajcript" type="text/javascript">
-<!--
+
 function open_new_window(url)
 {
 new_window = window.open(url,'window_name','toolbar=0,menubar=0,resizable=0,dependent=0,status=0,width=540,height=540,left=25,top=15')
