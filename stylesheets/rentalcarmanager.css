@@ -29,6 +29,8 @@ position: relative;
 background: url(https://rodrigobarona.github.io/westcoastcampers/images/bg_ws1.png) left -25px repeat-x;
 }
 
+.ui-datepicker .ui-datepicker-buttonpane {display:none !important;}
+
 .webstep1 .row { margin-bottom: 5px;}
 .webstep2 .row  { margin-bottom: 0;}
 .webstep1 h4 { font-weight: normal; font-size: 22px; padding-top:10px; }
