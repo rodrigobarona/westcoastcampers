@@ -16,8 +16,8 @@ border-color: #3598C3; */
 }
 
 .btn-success:hover, .btn-success:focus, .btn-success.focus, .btn-success:active, .btn-success.active, .open>.dropdown-toggle.btn-success {
-	background-color: #3598C3;
-border-color: #2D7C9E;
+/*	background-color: #3598C3;
+border-color: #2D7C9E; */
 }
 
 .ui-datepicker-trigger {cursor: pointer;}
@@ -54,7 +54,7 @@ background: url(https://rodrigobarona.github.io/westcoastcampers/images/bg_ws1.p
 .jumbotron select[name="DropoffTime"],
 .jumbotron select[name="pickupTime"] {width: 113px;}
 
-.webstep2 .vehicle-image {width: 85%;}
+.webstep2 .vehicle-image {width: 65%;}
 
 
 
