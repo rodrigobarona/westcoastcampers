@@ -11,8 +11,8 @@ hr {margin-top: 8px;
 margin-bottom: 8px;}
 .btn-success {
 
-background-color: #3cb4e8;
-border-color: #3598C3;
+/* background-color: #3cb4e8;
+border-color: #3598C3; */
 }
 
 .btn-success:hover, .btn-success:focus, .btn-success.focus, .btn-success:active, .btn-success.active, .open>.dropdown-toggle.btn-success {
