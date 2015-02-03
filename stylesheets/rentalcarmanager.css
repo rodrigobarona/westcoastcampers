@@ -54,7 +54,7 @@ background: url(https://rodrigobarona.github.io/westcoastcampers/images/bg_ws1.p
 .jumbotron select[name="DropoffTime"],
 .jumbotron select[name="pickupTime"] {width: 113px;}
 
-.webstep2 .vehicle-image {width: 65%;}
+.webstep2 .vehicle-image {width: 60%;}
 
 
 
