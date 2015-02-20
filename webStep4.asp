@@ -262,12 +262,13 @@ if Request.QueryString("dir")="Rate"  then '--from step3
    l_s.Close
    Set l_s=nothing
 
-   if Request.Form("submit")="Request Booking" or Request.Form("submit")="Book Now" or Request.Form("submit")="Book" then
-            Session("RCM273_bookingType")="Booking" '--used pass from ExistingCustInfoForm, to show the "PersonalInfoForm" or "PersonalInfoFormQuote"
-      end if
-       if Request.Form("submit")="Email Me Quote"  then
-            Session("RCM273_bookingType")="Quote" '--used pass from ExistingCustInfoForm, to show the "PersonalInfoForm" or "PersonalInfoFormQuote"
-      end if
+   'if Request.Form("submit")="Request Booking" or Request.Form("submit")="Book Now" or Request.Form("submit")="Book" then
+   if Request.Form("submit")="Request Booking" or Request.Form("submit")="Book Now" or Request.Form("submit")="REQUEST BOOKING" then
+         Session("RCM273_bookingType")="Booking" '--used pass from ExistingCustInfoForm, to show the "PersonalInfoForm" or "PersonalInfoFormQuote"
+   end if
+   if Request.Form("submit")="Email Me Quote"  then
+         Session("RCM273_bookingType")="Quote" '--used pass from ExistingCustInfoForm, to show the "PersonalInfoForm" or "PersonalInfoFormQuote"
+   end if
 
 
 end if
@@ -395,7 +396,8 @@ SUB PersonalInfoForm
  '============a same page caonot have 2 forms with same name
           Response.Write("<h4 class='smallm_title centered bigger'><span>Your personal information</span></h4><div class='row'>")
 
-         Response.Write("<form method=post action='webstep5.asp?type=Quote&categoryStatus="&Request.QueryString("categoryStatus")&"&sreload=1'  name='theForm'  onSubmit='return Validate();'>")
+         'Response.Write("<form method=post action='webstep5.asp?type=Quote&categoryStatus="&Request.QueryString("categoryStatus")&"&sreload=1'  name='theForm'  onSubmit='return Validate();'>")
+         Response.Write("<form method=post action='webstep5.asp?type=Booking&categoryStatus="&Request.QueryString("categoryStatus")&"&sreload=1'  name='theForm'  onSubmit='return Validate();'>")
 
       
 %>        
@@ -469,7 +471,7 @@ SUB PersonalInfoForm
         </td></tr>
         <tr><td align="left" class="text">License No:<font color="red">*</font></td><td align="left" class="text"  colspan="2"><input type="text" name="License" maxlength="30"  class="form-control" size="30" value="<%=Session("RCM273_License")%>" /></td></tr>
         <tr><td align="left" class="text">Country of issue:<font color="red">*</font></td><td align="left" class="text"  colspan="2">
-		 <%   Set s_c=webConn.Execute("select * FROM Country ORDER BY  Country " )
+       <%   Set s_c=webConn.Execute("select * FROM Country ORDER BY  Country " )
             Response.Write("<select name='LicenseIssued' class='form-control'>")
             WHILE NOT s_c.EOF
                   if  Cstr(s_c("ID"))=Session("RCM273_LicenseIssued") then
@@ -488,9 +490,9 @@ SUB PersonalInfoForm
             Response.Write("</select>")
 
 %>
-		
-		
-		</td></tr>
+      
+      
+      </td></tr>
         <tr>
         <td align="left" class="text">Expiry Date:<font color="red">*</font></td>
         <td align="left" class="text"  colspan="2">
@@ -694,11 +696,11 @@ SUB PersonalInfoForm
 
 
       <tr><td colspan="4" align="right"   >
-	  <hr />
+     <hr />
       <input type="button" value="Back" class='btn btn-default'  onclick="javascript:history.back(-1)" style="float: left;" />&nbsp;&nbsp;
 
     <% if Session("RCM273_categoryStatus") = "2" then '---LIMITED AVAILABILTY %>
-       <input  onClick="document.pressed=this.value" name="submit1" class='btn btn-success btn-lg'  type="submit"  value="Request Booking"  ></td></tr>
+       <input  onClick="document.pressed=this.value" name="submit1" class='btn btn-info btn-lg'  type="submit"  value="REQUEST BOOKING"  ></td></tr>
 <% else %>
     <!--  <input  onClick="document.pressed=this.value" name="submit1" class=rcmbutton  type="submit"  value="Confirm Booking"  ></td></tr> -->
  <input  onClick="document.pressed=this.value" name="submit1" class='btn btn-success btn-lg'  type="submit"  value="Confirm Booking"  ></td></tr>
@@ -1187,8 +1189,8 @@ END IF
     %>
  <div class="container">
         <h4 class="smallm_title centered bigger"><span>Your quote details</span></h4>
-		
-		
+      
+      
     <%
         theimage=RCMURL&"/DB/"&CompanyCode&"/"&Session("RCM273_CarImageName")
 

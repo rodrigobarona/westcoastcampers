@@ -294,6 +294,11 @@ END FUNCTION
          HTML = HTML & Subject1
          HTML = HTML & "</td></tr>"
 
+          DateEntered = Day(Session("RCM273_LocalTime"))&"/"&MonthName(Month(Session("RCM273_LocalTime")))&"/"&Year(Session("RCM273_LocalTime"))
+          if Session("RCM273_LocalTime")="" then
+                  DateEntered = Day(Now)&"/"&MonthName(Month(Now))&"/"&Year(Now)
+          end if
+
          HTML = HTML & "<tr><td colspan='2' class='text'>"
          if s_d("Quotation")=True  then
                HTML = HTML & "<div align=justify> "
@@ -342,7 +347,10 @@ END FUNCTION
 
                   HTML = HTML & "<tr><td colspan='2' class='text'>Your Quotation details are as follows:</td></tr>"
                   HTML = HTML & "<tr class='HighlightRow' bgcolor='#EEF1F4'><td class=OpeningTD colspan='2'><FONT class='text'>Quotation Date: "
-                  HTML = HTML & Day(now)&"/"&Left(MonthName(Month(Now)),3)&"/"&Year(now)
+
+
+
+                  HTML = HTML & DateEntered
                   HTML = HTML & "</font></td></tr>"
                   HTML = HTML & "<tr><td style='height:1px' colspan='2'  bgcolor="&Session("RCM273_CompanyColour")&"></td></tr>"
                   HTML = HTML & "<tr ><td class='GREYTEXT' style='width:120px' ><b>Ref:</b></td> <td class='text' align='left' style='width:520px'>#Q-"&Session("RCM273_DocPrFix")&""&Session("RCM273_BookingBufferNo")&" ("&Session("RCM273_PickupLocation")&")</td></tr>"
@@ -353,7 +361,7 @@ END FUNCTION
                   HTML = HTML & ".<tr><td colspan='2' class='text'>You will receive a email confirmation from the renting location shortly."
                   HTML = HTML & "<tr><td colspan='2' class='text'>Your booking details are as follows:</td></tr>"
                   HTML = HTML & "<tr class=HighlightRow bgcolor=#EEF1F4><td class=OpeningTD colspan='2'><FONT class='text'>Booking Date: "
-                  HTML = HTML & Day(now)&"/"&Left(MonthName(Month(Now)),3)&"/"&Year(now)
+                  HTML = HTML & DateEntered
                   HTML = HTML & "</font></td></tr>"
                   HTML = HTML & "<tr><td style='height:1px' colspan='2'  bgcolor='"&Session("RCM273_CompanyColour")&"'></td></tr>"
                   HTML = HTML & "<tr ><td class='GREYTEXT'><b> Ref:</b></td><td class='text' align='left'><b>#U-"&Session("RCM273_DocPrFix")&""&Session("RCM273_BookingBufferNo")&" ("&Session("RCM273_PickupLocation")&")</b></td></tr>"
@@ -643,7 +651,7 @@ END FUNCTION
                   Response.Write("<tr><td>&nbsp;</td></tr>")
                   Response.Write("<tr><td class='text' align='center' >Any additional info, please contact us at <a href='mailto:"&CompanyEmail&"'  class='re'd><font color='#3cb4e8'>"&CompanyEmail&"</font></a></h1></td></tr>")
                   Response.Write("<tr><td align='center' class='text'>Thanks for choosing "&Company&"..</td></tr> ")
-				  Response.Write("<tr><td>&nbsp;</td></tr>")
+              Response.Write("<tr><td>&nbsp;</td></tr>")
        
              else
                   Response.Write("<tr><td align='center' class='text'>Your Online Booking  has been forwarded to "&Company&"</td></tr>")
@@ -652,7 +660,7 @@ END FUNCTION
 
                   Response.Write("<tr><td align='center' class='text'>If you have any queries regarding the status of your Online Booking please don't hesitate to email us at <a href='mailto:"&CompanyEmail&"'  class='red'><font color='#3cb4e8'>"&CompanyEmail&"</font></a></td></tr>  ")
                   Response.Write("<tr><td align='center' class='text'>Thanks for choosing  "&Company&"..</td></tr> ")
-				  Response.Write("<tr><td>&nbsp;</td></tr>")
+              Response.Write("<tr><td>&nbsp;</td></tr>")
            end if
       else
             if s_d("Quotation")=True  then
@@ -660,7 +668,7 @@ END FUNCTION
                      Response.Write("<tr><td>&nbsp;</td></tr>")
                      Response.Write("<tr><td class='text' align=center >Any additional info, please contact us at <a href='mailto:"&CompanyEmail&"'  class=red><font color='#3cb4e8'>"&CompanyEmail&"</font></a></h1></td></tr>")
                     Response.Write("<tr><td  align='center' class='text'>Thanks for choosing "&Company&"..</td></tr> ")
-					Response.Write("<tr><td>&nbsp;</td></tr>")
+               Response.Write("<tr><td>&nbsp;</td></tr>")
        
              else
                      Response.Write("<tr><td class='text' align=center>Your booking request has been forwarded to "&Company&" </td></tr>")
@@ -672,10 +680,10 @@ END FUNCTION
                     Response.Write("<tr><td align='center' class='text'>If you have any queries regarding the status of your Online Booking Request please don't hesitate to email us at <a href='mailto:"&CompanyEmail&"'  class=red><font color='#3cb4e8'>"&CompanyEmail&"</font></a></td></tr>  ")
                      Response.Write("<tr><td  class='text'></td></tr>")
                      Response.Write("<tr><td align='center' class='text'>Thanks for choosing  "&Company&".</td></tr> ")
-					 Response.Write("<tr><td>&nbsp;</td></tr>")
+                Response.Write("<tr><td>&nbsp;</td></tr>")
             end if
        end if
-    Response.Write("<tr><td  class='text' align='center'><A HREF=http://"&homeURL&">Return to HOME page</a> ")
+    Response.Write("<tr><td  class='text' align='center'><A HREF=http://"&homeURL&">RETURN TO HOME PAGE</a> ")
     '---close window dose not work in some browser 
  ' Response.Write("<a href=""javascript:window.close()"" >Close Window</a> ")
   '  Response.Write("<form method='post' action='webstep5.asp'  >")

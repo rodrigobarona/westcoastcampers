@@ -106,17 +106,17 @@ SUB TheQutoationForm
 <div class="container">
 <h4 class="smallm_title centered bigger"><span>Change Booking enquiry</span></h4>
 
-<form method="post" name="theform" action="webstep2.asp" id="theform" class="form-inline" >
+<form method="post" name="theform" action="webstep2.asp#book" id="theform" class="form-inline" >
 <div class="jumbotron">
 <div class="row">
 <div class="form-group">
     
-      <div class="col-xs-4">
+      <div class="col-xs-3">
       <label class="control-label">Pickup Location:</label>
                         <%    SelectPickupLocation  %>
                       </div>
 
-                        <div class="col-xs-5">
+                        <div class="col-xs-4">
       <label class="control-label" for="PickupDay">Pickup Date:</label>
                               <select name="PickupDay" id="PickupDay" class="form-control input-sm">
                                 <%     for pd=1 to 9
@@ -181,8 +181,8 @@ SUB TheQutoationForm
 
                             </div>
 
-       <div class="col-xs-3">
-           <label class="control-label" for="pickupTime">Pickup Time:</label>
+       <div class="col-xs-2">
+           <label class="control-label" for="pickupTime">Time:</label>
                         <select name="pickupTime" id="pickupTime" class="form-control input-sm">
                           <option value='00:00'>midnight</option>
                           <option value='00:30'>00:30 AM</option>
@@ -195,7 +195,7 @@ SUB TheQutoationForm
                                  min="30"
                                end if
                                if  i<12 then
-                                 test=i+1&":"&min&" PM"
+                                 test=i&":"&min&" AM"
                                  if i<10 then
                                       theTime="0"&i&":"&min
                                  else
@@ -219,19 +219,56 @@ SUB TheQutoationForm
                         </select>
                      </div>
 
+    <div class="col-xs-3">
+
+
+     <label class="control-label" for="YoungestDriver">Youngest Driver:</label>
+                        <%
+      Response.Write("<select name=""driverage"" id=""YoungestDriver"" class=""form-control input-sm""><option value=""0"" selected=""selected"">Please select</option>")
+        SET s_c=webConn.Execute("SELECT Count(*) as Records from DriverAge")
+        NoRecords=0
+        if ISNULL(s_c("Records"))<>True then
+         NoRecords=s_c("Records")
+         end if
+         s_c.close
+         SET s_c=nothing
+
+        SET s_m=webConn.Execute("SELECT * from DriverAge  order by DriverAge")
+        k=0
+        While Not s_m.EOF
+               k=k+1
+                DriverAge=s_m("DriverAge")&" Years"
+               if k=NoRecords then
+                  DriverAge=s_m("DriverAge")&" + Years"
+               end if
+                  if CStr(s_m("DriverAge"))=Session("RCM273_driverage")  then
+                           Response.Write("<option value='"&s_m("DriverAge")&"' selected=""selected"">"&DriverAge&"</option>")
+                  elseif Session("RCM273_driverage")="" and s_m("DefaultAge")="True" then
+                           Response.Write("<option value='"&s_m("DriverAge")&"' selected=""selected"">"&DriverAge&"</option>")
+                  else
+                           Response.Write("<option value='"&s_m("DriverAge")&"' >"&DriverAge&"</option>")
+                  end if
+        s_m.MoveNext
+        Wend
+        s_m.Close
+        Set s_m=nothing     %>
+                        </select>
+
+</div>
+
 </div><!-- form-group -->
 </div>
 
 
 <div class="row">                   
 <div class="form-group"> 
-      <div class="col-xs-4">
+      <div class="col-xs-3">
       <label class="control-label">Return Location:</label>
 
                         <%   SelectDropoffLocation    '--Subs         %>
                             </div>
       
-      <div class="col-xs-5">
+      <div class="col-xs-4">
       <label class="control-label" for="DropoffDay">Return Date:</label>
 
                               <select name="DropoffDay" id="DropoffDay"  class="form-control input-sm">
@@ -302,8 +339,8 @@ SUB TheQutoationForm
 
 
 
-                     <div class="col-xs-3">
-                        <label class="control-label" for="DropoffTime" >Return Time:</label>
+                     <div class="col-xs-2">
+                        <label class="control-label" for="DropoffTime" >Time:</label>
                         <select name="DropoffTime" id="DropoffTime" class="form-control input-sm" >
                           <option value='00:00'>midnight</option>
                           <option value='00:30'>00:30 AM</option>
@@ -316,7 +353,7 @@ SUB TheQutoationForm
                                  min="30"
                                end if
                                if  i<12 then
-                                 test=i+2&":"&min&" PM"
+                                 test=i&":"&min&" AM"
                                  if i<10 then
                                       theTime="0"&i&":"&min
                                  else
@@ -374,6 +411,13 @@ SUB TheQutoationForm
                       
 
 </div>
+
+<div class="col-xs-3">
+
+
+                          <input name="submit" type="submit" class="rcmbutton btn btn-info btn-block" value="GET A QUOTE" />
+  </div>
+
 </div><!-- form-group -->
 
        
@@ -381,57 +425,7 @@ SUB TheQutoationForm
 
 </div><!-- row -->
 
-<div class="row">
-<div class="form-group"> 
 
-
-<div class="col-xs-4">
-
-
-     <label class="control-label" for="YoungestDriver">Youngest Driver:</label>
-                        <%
-      Response.Write("<select name=""driverage"" id=""YoungestDriver"" class=""form-control input-sm""><option value=""0"" selected=""selected"">Please select</option>")
-        SET s_c=webConn.Execute("SELECT Count(*) as Records from DriverAge")
-        NoRecords=0
-        if ISNULL(s_c("Records"))<>True then
-         NoRecords=s_c("Records")
-         end if
-         s_c.close
-         SET s_c=nothing
-
-        SET s_m=webConn.Execute("SELECT * from DriverAge  order by DriverAge")
-        k=0
-        While Not s_m.EOF
-               k=k+1
-                DriverAge=s_m("DriverAge")&" Years"
-               if k=NoRecords then
-                  DriverAge=s_m("DriverAge")&" + Years"
-               end if
-                  if CStr(s_m("DriverAge"))=Session("RCM273_driverage")  then
-                           Response.Write("<option value='"&s_m("DriverAge")&"' selected=""selected"">"&DriverAge&"</option>")
-                  elseif Session("RCM273_driverage")="" and s_m("DefaultAge")="True" then
-                           Response.Write("<option value='"&s_m("DriverAge")&"' selected=""selected"">"&DriverAge&"</option>")
-                  else
-                           Response.Write("<option value='"&s_m("DriverAge")&"' >"&DriverAge&"</option>")
-                  end if
-        s_m.MoveNext
-        Wend
-        s_m.Close
-        Set s_m=nothing     %>
-                        </select>
-
-</div>
-
-<div class="col-xs-5">&nbsp;
-</div>
-
-<div class="col-xs-3">
-
-
-                          <input name="submit" type="submit" class="rcmbutton btn btn-info btn-block btn-lg" value="GET A QUOTE" />
-  </div>
-  </div>
-</div>
       </div><!-- jumbotron -->
                   </form>
 
@@ -561,7 +555,7 @@ END SUB
 
 
 
-         Response.Write("<h4 class=""smallm_title centered bigger""><a name='book'></a><span>Book your campervan</span></h4>")
+         Response.Write("<h4 class=""smallm_title centered bigger""><a name='book'></a><span>Your quote details</span></h4>")
 
         '---allow muti-records for Unavailable booking perioed, only select distinc record 1st
        SQL=" SELECT  Distinct  CategoryID, ordering,CategoryType,CarSize.*  FROM WebLocationCategory,CarSize ,CategoryType "
@@ -930,7 +924,7 @@ END SUB
 
 '---table for each vehciel
 Response.Write("<div class=""row"">")
-Response.Write("<div class=""col-xs-7"">")
+Response.Write("<div class=""col-xs-6"">")
 
                   '--left side table with images----
                   Response.Write("<p class=""text-center""><img src='"&theimage&"' class=""img-rounded vehicle-image"" /></p>")
@@ -957,6 +951,11 @@ Response.Write("<div class=""col-xs-7"">")
                   end if
 
 Response.Write("</div>")
+
+ Response.Write("<div class=""col-xs-1"">")
+Response.Write("<p><a href='https://www.youtube.com/watch?v=zkdme_c7sCc' target='_blank'>Video</a></p>")
+Response.Write("<p><a href='https://flic.kr/s/aHsk7xaKUz' target='_blank'>Pictures</a></p>")
+ Response.Write("</div>")
 
             '---table for the right side category desc, rate and booking button
                   Response.Write("<div class=""col-xs-5"">")
@@ -1551,7 +1550,7 @@ EachInsuranceFees=0
 
                                   Response.Write("<a href='webstep3.asp?categoryStatus=2&CarSizeID="&s_cs("ID")&"&TotalRentalDays="&TotalDays&"&PickupLocationID="&CINT(Request.Form("PickupLocationID"))&"&DLocationID="&CINT(Session("RCM273_DropoffLocationID"))&"&PickDateTime="&RequestPickDate&"&DropoffDateTime="&RequestDropDate&"&PickupTime="&RequestPickTime&"&DropoffTime="&RequestDropTime&"' class='rcmbutton btn btn-info btn-block btn-lg text-uppercase' >")
 
-                                 Response.Write("Book now <span class=""glyphicon glyphicon-chevron-right"" aria-hidden=""true""></span></a></div>")
+                                 Response.Write("Request booking</a></div>")
                             else
                                  'Response.Write("<tr><td><td    align=""center""  class=""text"">")
                                  Response.Write("<div class=""alert alert-danger"" role=""alert"">No Rate Available</div>")

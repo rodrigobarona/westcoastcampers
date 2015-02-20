@@ -1638,7 +1638,7 @@ SQL=" SELECT  CarSize.*  FROM CarSize  "
 
                if Request.QueryString("categoryStatus")="2" then '---LIMITED AVAILABILTY,
                      Response.Write("&nbsp;<input NAME=submit type='submit' class='btn btn-default' value='Email Me Quote'  /></td>") '---if does not allow email quote, block this line of code
-                     Response.Write("<td colspan='2'><input NAME=submit type='submit' class='btn btn-success btn-block btn-lg' value='Request Booking'  />")
+                     Response.Write("<td colspan='2'><input NAME=submit type='submit' class='btn btn-info btn-block btn-lg' value='REQUEST BOOKING'  />")
                 else
                      Response.Write("&nbsp;<input NAME=submit type='submit' class='btn btn-default' value='Email Me Quote'  /></td>")
                      Response.Write("<td colspan='2'><input NAME=submit type='submit' class='btn btn-info btn-block btn-lg' value='BOOK NOW'  />")

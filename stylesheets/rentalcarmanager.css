@@ -24,9 +24,7 @@ border-color: #2D7C9E; */
 .smallm_title.bigger {text-transform: uppercase; margin-top: 50px;}
 
 .webstep1 {
-color: #fff;
-position: relative;
-background: url(https://rodrigobarona.github.io/westcoastcampers/images/bg_ws1.png) left -25px repeat-x;
+
 }
 
 .ui-datepicker .ui-datepicker-buttonpane {display:none !important;}

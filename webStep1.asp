@@ -136,19 +136,17 @@ SUB TheQutoationForm
 <!--iframe inside home page, Validate and open a popup window to go to webstep2.asp,-->
  <form method="post" name="theform"  action="webstep2.asp?refid=<%=Request.QueryString("refid")%>&amp;URL=<%=Request.QueryString("URL")%>#book" id="theform"  onsubmit="javascript:return Validate();" rel="nofollow" target="_parent" class="form-inline"/>
 
-<div class="row">
-  <div class="col-sm-5" style="padding-top:20px;">
-    <h4 class="text-center">Check our prices and book your campervan!</h4>
-  </div>
+<div class="jumbotron">
 
-
-<div class="col-sm-7">
 <div class="row">
 <div class="form-group">
+<div class="col-xs-3">
   
     <label class="control-label">Pickup Location:</label>
     <%    SelectPickupLocation  %>
-    <label class="sr-only" for="PickupDay">Pickup Day</label>
+</div>
+<div class="col-xs-4">
+    <label class="control-label" for="PickupDay">Pickup Date:</label>
     <select name="PickupDay" id="PickupDay" class="form-control input-sm">
       <%     for pd=1 to 9
                      zero = "0"
@@ -206,10 +204,12 @@ SUB TheQutoationForm
                    
                    <%'=day(defaultPickupDate) %>
       <input type="hidden" value="<% if len(month(defaultPickupDate))<2 then Response.Write("0"&month(defaultPickupDate)) else Response.Write(month(defaultPickupDate)) end if%><%="/" & day(defaultPickupDate) & "/" & year(defaultPickupDate)%>" id="txtStartDate" size="12" />
+</div>
 
+<div class="col-xs-2">
             
-            <label class="sr-only" for="PickupYear">Pickup Time</label>
-            <select name="pickupTime" id="pickupTime"  class="form-control input-sm hidden">
+            <label class="control-label" for="PickupYear">Time:</label>
+            <select name="pickupTime" id="pickupTime"  class="form-control input-sm">
             <option value='00:00' >midnight</option>
             <option value='00:30' >00:30 AM</option>
                      <%
@@ -243,15 +243,58 @@ SUB TheQutoationForm
                       next
                 %>
       </select>
-</div><!-- form-group -->
 </div>
+
+<div class="col-xs-3">
+
+<label class="control-label">Youngest Driver:</label>
+       
+        <%
+            Response.Write("<SELECT name='driverage' class='form-control input-sm'><option value=0 selected>Please select</option>")
+        SET s_c=webConn.Execute("SELECT Count(*) as Records from DriverAge")
+        NoRecords=0
+        if ISNULL(s_c("Records"))<>True then
+         NoRecords=s_c("Records")
+         end if
+         s_c.close
+         SET s_c=nothing
+
+        SET s_m=webConn.Execute("SELECT * from DriverAge  order by DriverAge")
+        k=0
+        While Not s_m.EOF
+               k=k+1
+                DriverAge=s_m("DriverAge")&" Years"
+               if k=NoRecords then
+                  DriverAge=s_m("DriverAge")&" + Years"
+               end if
+                  if CStr(s_m("DriverAge"))=Session("RCM273_driverage")  then
+                           Response.Write("<option value='"&s_m("DriverAge")&"' selected>"&DriverAge&"</option>")
+                  elseif Session("RCM273_driverage")="" and s_m("DefaultAge")="True" then
+                           Response.Write("<option value='"&s_m("DriverAge")&"' selected>"&DriverAge&"</option>")
+                  else
+                           Response.Write("<option value='"&s_m("DriverAge")&"' >"&DriverAge&"</option>")
+                  end if
+        s_m.MoveNext
+        Wend
+        s_m.Close
+        Set s_m=nothing  %>
+                   </SELECT>
+
+</div>
+
+</div><!-- form-group -->
+</div><!-- row -->
 
 <div class="row">                   
 <div class="form-group"> 
+<div class="col-xs-3">
       <label class="control-label">Return Location:</label>
       <%   SelectDropoffLocation    '--Subs         %>
+</div>
 
-      <label class="sr-only" for="DropoffDay">Return Day</label>
+<div class="col-xs-4">
+
+      <label class="control-label" for="DropoffDay">Return Date:</label>
         <select name="DropoffDay" id="DropoffDay"  class="form-control input-sm">
            <%  for pd=1 to 9
                      zero = "0"
@@ -313,8 +356,10 @@ SUB TheQutoationForm
 <%'=day(defaultDropoffDate) %>
             <input type="hidden" value="<% if len(month(defaultDropoffDate))<2 then Response.Write("0"&month(defaultDropoffDate)) else Response.Write(month(defaultDropoffDate)) end if%>/<%if len(day(defaultDropoffDate)) < 2 then Response.Write("0"&day(defaultDropoffDate)) else Response.Write(day(defaultDropoffDate)) end if%>/<%=year(defaultDropoffDate)%>" id="txtEndDate" size="12" />
      
-        <label class="sr-only" for="DropoffTime">Return Time</label>
-       <select name="DropoffTime"   class="form-control input-sm hidden">
+  </div>
+  <div class="col-xs-2">   
+        <label class="control-label" for="DropoffTime">Time:</label>
+       <select name="DropoffTime"   class="form-control input-sm ">
             <option value='00:00' >midnight</option>
                       <option value='00:30' >00:30 AM</option>
                      <%
@@ -382,44 +427,18 @@ SUB TheQutoationForm
                set s_c=nothing
               %>
 
-&nbsp;<input name="submit" type="submit" class="rcmbutton btn btn-success" value="GET A QUOTE"  />
+</div>
+
+<div class="col-xs-3">
+
+<input name="submit" type="submit" class="rcmbutton btn btn-info btn-block" value="GET A QUOTE"  />
+</div>
+
 </div><!-- form-group -->
 </div>
-<div class="row">                   
-<div class="form-group"> 
 
-         <label class="">Youngest Driver:</label>
-       
-        <%
-            Response.Write("<SELECT name='driverage' class='form-control input-sm' style='width: 138px;'><option value=0 selected>Please select</option>")
-        SET s_c=webConn.Execute("SELECT Count(*) as Records from DriverAge")
-        NoRecords=0
-        if ISNULL(s_c("Records"))<>True then
-         NoRecords=s_c("Records")
-         end if
-         s_c.close
-         SET s_c=nothing
 
-        SET s_m=webConn.Execute("SELECT * from DriverAge  order by DriverAge")
-        k=0
-        While Not s_m.EOF
-               k=k+1
-                DriverAge=s_m("DriverAge")&" Years"
-               if k=NoRecords then
-                  DriverAge=s_m("DriverAge")&" + Years"
-               end if
-                  if CStr(s_m("DriverAge"))=Session("RCM273_driverage")  then
-                           Response.Write("<option value='"&s_m("DriverAge")&"' selected>"&DriverAge&"</option>")
-                  elseif Session("RCM273_driverage")="" and s_m("DefaultAge")="True" then
-                           Response.Write("<option value='"&s_m("DriverAge")&"' selected>"&DriverAge&"</option>")
-                  else
-                           Response.Write("<option value='"&s_m("DriverAge")&"' >"&DriverAge&"</option>")
-                  end if
-        s_m.MoveNext
-        Wend
-        s_m.Close
-        Set s_m=nothing  %>
-                   </SELECT>
+         
         
         <label class="sr-only">Promo code?: </label>
        <input type=hidden name=PromoCode maxlength=30 size=20 value="<%=Session("RCM273_PromoCode")%>">
@@ -434,14 +453,10 @@ SUB TheQutoationForm
        -->
        
 
-</div><!-- form-group -->
 
 
 
-</div><!-- row -->
-</div><!-- col-xs-5 -->
-
-</div><!-- row -->
+</div><!-- jumbotron -->
  </form>
  <%  END SUB       %>
 
